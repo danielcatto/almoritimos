@@ -7,19 +7,17 @@ int main(){
     cout << "verificar qual o maior numero inteiro: \n";
     cout << "Informe quatas vezes será testado!\n";
     cin >> vezes;
-    for (contador = 0; contador < vezes; contador++)
+    cout << "\n";
+    for (contador = 1; contador <= vezes; contador++)
     {
-        cout << "informe um número inteiro! \n";
+        cout << "informe o " << contador << "º numero! \n";
         cin >> checar;
         if (checar > maior){
-            maior = checar;
-            cout << "if";
-        }else{
-            cout << "else";
+            maior = checar;   
         }
 
     }
-    cout << "O maior numero digitado foi " << maior;
+    cout << "O maior numero digitado foi " << maior << "\n\n";
 
 
 }
