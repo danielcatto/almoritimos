@@ -2,7 +2,7 @@
 using namespace std;
 
 int main(){
-    int checar = 0, contador = 1, vezes = 0;
+    int checar = 0, contador, vezes = 0;
     int maior = -900000000;
     cout << "verificar qual o maior numero inteiro: \n";
     cout << "Informe quatas vezes será testado!\n";
