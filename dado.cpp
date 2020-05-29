@@ -5,6 +5,7 @@
 using namespace std;
 
 int main() {
+string texto = "teste";
 srand((unsigned)time(0)); 
 int i, contador, lista_numero[20];
 contador = 0;

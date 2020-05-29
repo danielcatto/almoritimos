@@ -6,13 +6,18 @@ int main() {
     bool vitoria = false;
     int numeros[10];
     int tentativas = 10, indice = 0, entrada, numEscolhido, posicao, vezes;
+
+    cout << "Jogos de adivinhação - ";
+    cout << "Primeiro jogador\nInsira dez números inteiros positivos...\n";
+
     for (indice = 0; indice < tentativas; indice++)
     {
-        cout << "Insira dez numeros inteiros: ";
+        cout << "Insira o " << indice+1 << "º:";
         cin >>  entrada;
         numeros[indice] = entrada;
     }
     system("clear");
+    cout << "Jogador 2\nAdivinhe algum dos dez numeros em tres tentativas, boa sorte :D\n";
     for (int i = 0; i < 3; i++)
     {
         cout << "escolha o " << i+1 << "º numero: ";
