@@ -15,7 +15,8 @@ int main() {
 
     while (sair)
     { 
-    
+        modeloVeiculo = "";
+        valor = 0; valorTotal=0; totalImposto=0; 
         cout << "******************************************************\n \
         ******SISTEMA DE VENDAS DE AUTOMÓVEL******\n";
 
@@ -89,6 +90,7 @@ int main() {
             }
             //fim switch opções
             system("clear");
+
             cout << "******************************************************\n\
     ************SISTEMA DE VENDAS DE AUTOMÓVEL************\n";
             cout << ">Veiculo selecionado\n";
@@ -96,7 +98,7 @@ int main() {
             cout << ">opcionais: " << tipo;
             cout << "valor R$: " << valor << "\n";
             cout << "Total do veiculo R$: " << valorTotal << "\n"; 
-            cout << "Digite S para continular ou N para encerrar\n";
+            cout << "Digite S para continular ou QUAQUER tecla para continuar\n";
             cin >> verificaSair;
             if (verificaSair == "s" || verificaSair.empty())
             {
