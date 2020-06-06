@@ -3,17 +3,16 @@
 using namespace std;
 int main()
 {
-   int y;
-   int _testes;
 
-  for (y = 5; y > 0; y--)
+int x;
 
-     if (y % 2 == 0)
+    for (x = 1; x <= 5; x++)
 
-        cout << y - 1 << " ";
+        if (x % 3 == 0 && x % 5 == 0 )
 
-     else
+           cout << x + 2 << " ";
 
-        cout << y + 1 << " ";
+      else
 
+           cout << x + 1 << " ";
 }

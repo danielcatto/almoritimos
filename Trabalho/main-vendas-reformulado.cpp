@@ -17,8 +17,8 @@ int main() {
     { 
         modeloVeiculo = "";
         valor = 0; valorTotal=0; totalImposto=0; 
-        cout << "******************************************************\n \
-        ******SISTEMA DE VENDAS DE AUTOMÓVEL******\n";
+        cout << "*********************************************************\n\
+*************SISTEMA DE VENDAS DE AUTOMÓVEL**************\n";
 
         cout << "Informe o modelo do veiculo: ";
         cin >> modeloVeiculo;
@@ -27,7 +27,9 @@ int main() {
         cin >> valor;
         system("clear");
     
-        cout << "*****Veiculo selecionado*****\n";
+        cout << "*********************************************************\n\
+*************SISTEMA DE VENDAS DE AUTOMÓVEL**************\n";
+        cout << "Veiculo Selecionado\n";
         cout << "modelo: " << modeloVeiculo << "\n";
         cout << "valor R$: " << valor << "\n";
 
@@ -45,8 +47,9 @@ int main() {
             case 1:
                 cout << "Trio Eletrico\n";
                 tipo = "Trio Eletrico\n";            
-                subTrio = ((valor * impostoValorFabrica) / 100) + valorIPI ;            
-                totalImposto = subTrio;
+                subTrio = ((valor * impostoValorFabrica) / 100) ;
+                valorIPI = ((valor * impostoIPI) / 100);            
+                totalImposto = subTrio + valorIPI;
                 valorTotal = valor + totalImposto;
                 cout << "valor total do veiculo R$: " << valorTotal << "\n"; 
                 break;
@@ -91,8 +94,8 @@ int main() {
             //fim switch opções
             system("clear");
 
-            cout << "******************************************************\n\
-    ************SISTEMA DE VENDAS DE AUTOMÓVEL************\n";
+            cout << "*********************************************************\n\
+*************SISTEMA DE VENDAS DE AUTOMÓVEL**************\n";
             cout << ">Veiculo selecionado\n";
             cout << "modelo: " << modeloVeiculo << "\n";
             cout << ">opcionais: " << tipo;
@@ -104,7 +107,7 @@ int main() {
             {
                 sair = false;
             }
-            cout << "***************************************************\n";
+            //system("clear");
 
     }
 }
